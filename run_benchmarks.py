@@ -9,7 +9,7 @@ RESULT_LINE = 'Mean'
 REAL_LINE = 'real'
 MEAN_IDX = 1
 SIGMA_IDX = 2
-BACKENDS = ['ironox', 'cranelift', 'llvm']
+BACKENDS = ['cranelift', 'llvm']
 Z = 2.576
 
 
@@ -90,7 +90,7 @@ if __name__ == '__main__':
     parser.add_argument('-n', '--num-obs',
                         help='the number of times to run the benchmarks',
                         type=int,
-                        default=30)
+                        default=2)
     args = parser.parse_args()
     run_bench = []
     build_bench = []

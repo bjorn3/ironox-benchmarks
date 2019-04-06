@@ -53,10 +53,10 @@ pub fn numbers(
 
 fn main() {
     let mut i = 0;
-    while i < 100 {
+    while i < 2000 {
         println!("num_enum {:?}", num_enum(i));
         i = i + 1;
-        let x_u8 = 2 * i as u8;
+        let x_u8 = 2u8.wrapping_mul(i as u8);
         let x_u16 = 3 * i as u16;
         let x_u32 = 4 * i as u32;
         let x_u64 = 5 * i as u64;

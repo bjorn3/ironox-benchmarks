@@ -7,6 +7,6 @@ fn fibonacci(x: u64) -> u64 {
 }
 
 fn main() {
-    let n = 30;
+    let n = 35;
     println!("fibonacci({:?}) = {:?}", n, fibonacci(n));
 }
